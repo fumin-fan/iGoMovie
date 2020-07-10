@@ -1,0 +1,103 @@
+import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
+import {Row, Col, Affix} from 'antd';
+import top_bar_img from '../../img/top_bar_img.jpg';
+import v_poster from '../../img/v_poster.jpg';
+import prime from '../../img/prime.png';
+
+export default class Detail extends Component {
+
+    constructor(props){
+        super(props);
+        this.state={}
+    }
+    changeMargin =()=>{
+        let left_box = document.getElementById('left_box');
+        left_box.style.margin =0;
+    }
+    render(){
+        return (
+            <div className='v-detail'>
+                <div className="v-top-bar">
+                    <img src={top_bar_img} alt="" className="bar-on" />
+                    <div className="v-top-bar-bg">
+                        <div className="navigation">
+                            <Link to="">Home</Link> &gt; <Link to="">Movies</Link> &gt; <Link to="">Action Movies</Link> &gt; <span>Bad Boys for Life</span>
+                        </div>
+                        <div className="v-title" id="v-title">
+                            <h2>Bad Boys for Life</h2> <span>2020</span> <span className="tagline"><i style={{fontStyle: 'italic', fontWeight: 'normal'}}>"Ride together. Die together."</i></span>
+                        </div>
+                    </div>
+                </div> 
+                <Row 
+                    className="v-detail-box"
+                >
+                    <Col span={5} >   
+                        <Affix offsetTop={0} onChange={() =>this.changeMargin()}>
+                            <div id="left_box" className="v-left-box">
+                                <div className="v-poster">
+                                    <img src={v_poster} alt="Bad Boys for Life" />
+                                </div>
+                                <div className="v-watch-btn">
+                                    <span>AD <span style={{fontSize: '12px', color: '#999'}}>This title is not available on Prime Video</span></span>
+                                    <div> <img src={prime} alt='' /> </div>
+                                    <Link to="https://www.amazon.com/gp/video/offers?skipMarketingPage=1&ref_=asc_showname&tag=shadls01-20" className="now" target="_blank">Start 30-day Free Trial</Link>
+                                    <Link to="" className="source">View All Sources</Link>
+                                </div>
+                            </div>
+                        </Affix> 
+                    </Col>
+                    <Col span={19}>
+                    <div className="v-detail-desc">
+                        <div className="rating"> 
+                            <span style={{paddingLeft:0}}>
+                            <i className='icon icon-star'>
+                            </i>6.7</span>
+                            | <span>2h4m</span>| 
+                            <span className='icon_R'>
+                            R</span>| <span>en</span>| <span><Link to='' style={{textDecoration: 'underline',cursor: 'pointer'}} /* onclick="$('#addition').toggle();" */>More Info</Link></span> </div>
+                        <div className="addition" id="addition">
+                            <div>Released: 15 January 2020 Released</div>
+                            <div>Producted By: Columbia Pictures</div>
+                            <div>Country: </div>
+                            <div>Budget: 0</div>
+                            <div>Revenue: 0</div>
+                            <div>Official Website: https://www.badboysforlife.movie/</div>
+                        </div>
+                        <div className="summary clearfix">
+                            <Row>
+                                <Col span={12} >
+                                    <div className='summary_left'>
+                                        Synopsis
+                                        <p id="dd-summary">Marcus and Mike are forced to confront new threats, career changes, and midlife crises as they join the newly created elite team AMMO of the Miami police department to take down the ruthless Armando Armas, the vicious leader of a Miami drug cartel.</p>
+                                        <span /* onClick="show_dd(this)" */>... View More</span>
+                                    </div>
+                                    <div>
+                                        Stream Online
+                                        <p>The movie is currently not available onine</p>
+                                    </div>
+                                </Col>
+                                <Col span={12} >
+                                <div>
+                                    Cast
+                                    <p><Link to= ''>Will Smith</Link> , <Link to=''>Martin Lawrence</Link> , <Link to=''>Paola Nuñez</Link></p>
+                                </div>
+                                <div>
+                                    Director
+                                    <p></p>
+                                </div>
+                                <div>
+                                    Producted By
+                                    <p>Columbia Pictures</p>
+                                </div>
+                                </Col>
+                            </Row>
+                        </div>  
+                    </div>
+                    </Col>
+                </Row>   
+            </div>
+        
+        );
+    }
+}

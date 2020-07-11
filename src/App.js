@@ -45,7 +45,7 @@ class App extends Component {
         <Layout className="site-layout">
           <Row>
             <Col span={18} push={3}>
-              <Header className="site-layout-background" style={{  }}>
+              <Header className="site-layout-background" >
                   {React.createElement(this.state.collapsed ? MenuOutlined : MenuFoldOutlined, {
                     className: 'trigger',
                     onClick: this.toggle,

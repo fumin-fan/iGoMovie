@@ -1,4 +1,6 @@
 @r:30rem;
+
+ul{padding: 0;margin: 0;list-style: none;}
 html{
     width: 100vw;
     height:100vh;
@@ -109,7 +111,7 @@ body{
     margin-bottom:13/@r;
 }
 .v-watch-btn div img{
-    margin-top: 15px;
+    margin-top: 15/@r;
 }
 .v-watch-btn div>span{
     position: absolute;
@@ -135,16 +137,17 @@ body{
     border-radius: 30/@r;
     margin-top:8/@r;
 }
-.v-detail-desc { font-size: 16px; }
+.v-detail-desc { font-size: 16/@r; }
 .v-detail-desc .title h2 { display: inline-block; }
-.v-detail-desc .title span { margin-left:15px; font-size:14px; font-weight: 600; }
+.v-detail-desc .title span { margin-left:15/@r; font-size:14/@r; font-weight: 600; }
 .v-detail-desc .title span.tagline { color:#999; }
-.v-detail-desc .rating span { padding: 5px 10px; margin-right:3px; }
+.v-detail-desc .rating span { padding: 5/@r 10/@r; margin-right:3/@r; }
 .v-detail-desc .rating a { color: #e9e9e9;  }
-.v-detail-desc .addition { display:none; color: #e9e9e9; font-size:13px; margin-top: 10px; line-height: 20px; }
-.v-detail-desc .summary { margin-top: 10px;  color: #999; }
-.v-detail-desc .summary p { color: #e9e9e9; font-size:13px; font-weight:normal; }
-.v-detail-desc .summary p a { color:#e9e9e9; font-size:13px; font-weight:normal;  }
+.v-detail-desc .addition {color: #e9e9e9; font-size:13/@r; margin-top: 10/@r; line-height: 20/@r; }
+.v-detail-desc .addition div{color:#fff}
+.v-detail-desc .summary { margin-top: 10/@r;  color: #999; }
+.v-detail-desc .summary p { color: #e9e9e9; font-size:13/@r; font-weight:normal; }
+.v-detail-desc .summary p a { color:#e9e9e9; font-size:13/@r; font-weight:normal;  }
 
 .summary_left{position:relative}
 #dd-summary{
@@ -153,22 +156,99 @@ body{
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
-    max-height:90px;
+    max-height:90/@r;
 }
 .summary_left span{
     color: #fff;
-    font-size: 12px;
+    font-size: 12/@r;
     text-decoration: underline;
     cursor: pointer;
-    padding-left: 17px;
-    padding-right:6px; position: absolute;
+    padding-left: 17/@r;
+    padding-right:6/@r; 
+    position: absolute;
      bottom: 0; 
      right: 0; 
      background: #000;
 }
 .icon_R{
     background-color: #666; 
-    border-radius: 6px; 
-    padding: 2px 8px; 
-    font-size: 14px;
+    border-radius: 6/@r; 
+    padding: 2px 8/@r; 
+    font-size: 14/@r;
+}
+.icon-star{
+    color:#FFCC00;
+    padding: 0 !important;
+
+}
+
+.v-detail-xps { position:relative; min-height:300/@r; }
+.v-detail-xps img { max-width:100%; height: 300/@r; }
+.v-detail-xps-desc { position: absolute; top: 40/@r; left: 45/@r; text-align:left; }
+.v-detail-xps-desc h3 { margin:0; padding:0; font-size: 30/@r; font-weight: 600; max-width: 330/@r; color:#fff; line-height: 33/@r; }
+.v-detail-xps-desc span { display:inline-block; font-size: 13/@r; color: #ccc; margin:10/@r 0; }
+.v-detail-xps-desc a {
+    display: block;
+    background-color: #CC3333;
+    color: #fff;
+    font-size: 16/@r;
+    font-weight: 600;
+    padding: 15/@r 0;
+    border-radius: 30/@r;
+    text-align: center;
+    margin-top: 20/@r;
+}
+
+.v-detail-box-show { margin: 20/@r 0; }
+.v-detail-box-show h2 { font-size:20/@r; /* margin-bottom:10/@r; */ color:#fff }
+.v-detail-box-show .video-img { padding:0 5px; }
+.v-detail-box-show .video-list { height: 500/@r; padding:0 5/@r; overflow: scroll; overflow-x: hidden;}
+.v-detail-box-show .video-list li { position:relative;  margin-bottom: 8/@r; cursor: pointer; border:#333 1/@r solid; height: 120/@r; }
+.v-detail-box-show .video-list li img { width: 100%; height:100%; }
+.video-list::-webkit-scrollbar {
+    width: 8/@r;
+    background-color: #666;
+}
+.video-list::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border:#666 1px solid;
+    border-radius: 4px;
+}
+#ad_0901{
+    position:absolute; 
+    bottom:0; 
+    padding:10px 15px; 
+    font-size:14px; 
+    color:#fff; 
+    background-color:rgba(0,0,0,.6); 
+    width:100%;
+}
+#ad_0901 span:nth-of-type(1){
+    line-height:30/@r;
+}
+#ad_0901 span:nth-of-type(2){
+    position:absolute; 
+    bottom:50/@r; 
+    right:10/@r; 
+    cursor:pointer;
+}
+#ad_0901 a{
+    float: right; 
+    color: #000; 
+    background-color: #32CC6C; 
+    border-radius:5px; 
+    padding:5px 15px;
+}
+.icon-v-watch{
+    position: absolute;
+    right: 5/@r;
+    bottom:5/@r;
+    font-size: 30/@r;
+    font-weight: bold;
+    color: #fff;
+}
+#player-box iframe{
+    width:100%; 
+    height:500px;
+    border:none;
 }

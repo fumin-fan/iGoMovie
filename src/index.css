@@ -1,3 +1,8 @@
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 html {
   width: 100vw;
   height: 100vh;
@@ -169,7 +174,7 @@ body {
   margin-bottom: 0.43333333rem;
 }
 .v-watch-btn div img {
-  margin-top: 15px;
+  margin-top: 0.5rem;
 }
 .v-watch-btn div > span {
   position: absolute;
@@ -196,45 +201,47 @@ body {
   margin-top: 0.26666667rem;
 }
 .v-detail-desc {
-  font-size: 16px;
+  font-size: 0.53333333rem;
 }
 .v-detail-desc .title h2 {
   display: inline-block;
 }
 .v-detail-desc .title span {
-  margin-left: 15px;
-  font-size: 14px;
+  margin-left: 0.5rem;
+  font-size: 0.46666667rem;
   font-weight: 600;
 }
 .v-detail-desc .title span.tagline {
   color: #999;
 }
 .v-detail-desc .rating span {
-  padding: 5px 10px;
-  margin-right: 3px;
+  padding: 0.16666667rem 0.33333333rem;
+  margin-right: 0.1rem;
 }
 .v-detail-desc .rating a {
   color: #e9e9e9;
 }
 .v-detail-desc .addition {
-  display: none;
   color: #e9e9e9;
-  font-size: 13px;
-  margin-top: 10px;
-  line-height: 20px;
+  font-size: 0.43333333rem;
+  margin-top: 0.33333333rem;
+  line-height: 0.66666667rem;
+}
+.v-detail-desc .addition div {
+  color: #ffffff;
 }
 .v-detail-desc .summary {
-  margin-top: 10px;
+  margin-top: 0.33333333rem;
   color: #999;
 }
 .v-detail-desc .summary p {
   color: #e9e9e9;
-  font-size: 13px;
+  font-size: 0.43333333rem;
   font-weight: normal;
 }
 .v-detail-desc .summary p a {
   color: #e9e9e9;
-  font-size: 13px;
+  font-size: 0.43333333rem;
   font-weight: normal;
 }
 .summary_left {
@@ -246,15 +253,15 @@ body {
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
-  max-height: 90px;
+  max-height: 3rem;
 }
 .summary_left span {
   color: #fff;
-  font-size: 12px;
+  font-size: 0.4rem;
   text-decoration: underline;
   cursor: pointer;
-  padding-left: 17px;
-  padding-right: 6px;
+  padding-left: 0.56666667rem;
+  padding-right: 0.2rem;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -262,7 +269,126 @@ body {
 }
 .icon_R {
   background-color: #666;
-  border-radius: 6px;
-  padding: 2px 8px;
+  border-radius: 0.2rem;
+  padding: 2px 0.26666667rem;
+  font-size: 0.46666667rem;
+}
+.icon-star {
+  color: #FFCC00;
+  padding: 0 !important;
+}
+.v-detail-xps {
+  position: relative;
+  min-height: 10rem;
+}
+.v-detail-xps img {
+  max-width: 100%;
+  height: 10rem;
+}
+.v-detail-xps-desc {
+  position: absolute;
+  top: 1.33333333rem;
+  left: 1.5rem;
+  text-align: left;
+}
+.v-detail-xps-desc h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  max-width: 11rem;
+  color: #fff;
+  line-height: 1.1rem;
+}
+.v-detail-xps-desc span {
+  display: inline-block;
+  font-size: 0.43333333rem;
+  color: #ccc;
+  margin: 0.33333333rem 0;
+}
+.v-detail-xps-desc a {
+  display: block;
+  background-color: #CC3333;
+  color: #fff;
+  font-size: 0.53333333rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  border-radius: 1rem;
+  text-align: center;
+  margin-top: 0.66666667rem;
+}
+.v-detail-box-show {
+  margin: 0.66666667rem 0;
+}
+.v-detail-box-show h2 {
+  font-size: 0.66666667rem;
+  /* margin-bottom:10/@r; */
+  color: #ffffff;
+}
+.v-detail-box-show .video-img {
+  padding: 0 5px;
+}
+.v-detail-box-show .video-list {
+  height: 16.66666667rem;
+  padding: 0 0.16666667rem;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.v-detail-box-show .video-list li {
+  position: relative;
+  margin-bottom: 0.26666667rem;
+  cursor: pointer;
+  border: #333333 0.03333333rem solid;
+  height: 4rem;
+}
+.v-detail-box-show .video-list li img {
+  width: 100%;
+  height: 100%;
+}
+.video-list::-webkit-scrollbar {
+  width: 0.26666667rem;
+  background-color: #666;
+}
+.video-list::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border: #666 1px solid;
+  border-radius: 4px;
+}
+#ad_0901 {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 15px;
   font-size: 14px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+#ad_0901 span:nth-of-type(1) {
+  line-height: 1rem;
+}
+#ad_0901 span:nth-of-type(2) {
+  position: absolute;
+  bottom: 1.66666667rem;
+  right: 0.33333333rem;
+  cursor: pointer;
+}
+#ad_0901 a {
+  float: right;
+  color: #000;
+  background-color: #32CC6C;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+.icon-v-watch {
+  position: absolute;
+  right: 0.16666667rem;
+  bottom: 0.16666667rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+#player-box iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
 }

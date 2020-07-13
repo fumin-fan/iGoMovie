@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {Row, Col, Affix} from 'antd';
 import {StarFilled, PlayCircleFilled} from '@ant-design/icons';
+import MovieRecommend from './movieRecommend';
+import MovieRecommend2 from './movieRecommend2';
 import top_bar_img from '../../img/top_bar_img.jpg';
 import v_poster from '../../img/v_poster.jpg';
 import prime from '../../img/prime.png';
@@ -16,6 +18,9 @@ import video_list_5 from '../../img/video_list_5.jpg';
 import video_list_6 from '../../img/video_list_6.jpg';
 import video_list_7 from '../../img/video_list_7.jpg';
 import video_list_8 from '../../img/video_list_8.jpg';
+import actor1 from '../../img/actor1.jpg';
+import actor2 from '../../img/actor2.jpg';
+import actor3 from '../../img/actor3.jpg';
 
 
 export default class Detail extends Component {
@@ -189,10 +194,178 @@ export default class Detail extends Component {
                                 </Row>
                             </div>
                         </div>
+                        <div className="v-detail-box-show">
+                            <div className="v-detail-box-show-title trigger">
+                                <ul className="clearfix">
+                                    <li data-tag="cast_video" className="curr">Top Credited Cast<i></i></li>
+                                    <li>|</li>
+                                    <li data-tag="cast_crew">Crew<i></i></li>
+                                </ul>
+                            </div>
+                            <div className="v-item-box">
+                                <div id="cast_video" className="clearfix">
+                                    <div className="v-cast-thumb">
+                                        <div className="v-cast-thumb-title">
+                                            <img src={actor1} alt='' />
+                                            <div className="x"><Link to="#">Will Smith</Link><span> as Detective Mike Lowrey</span></div>
+                                        </div>
+                                        <div className="v-cast-thumb-list">
+                                            <ul>
+                                                <li>
+                                                    
+                                                    <span><Link to="#">Bad Boys for Life</Link></span>
+                                                </li>
+                                                <li>
+                                                    
+                                                    <span><Link to="#">Will Smith's Bucket List</Link></span>
+                                                </li>
+                                                <li>
+                                                    
+                                                    <span><Link to="#">Spies in Disguise</Link></span>
+                                                </li>
+                                                <li>
+                                                    <span className='free'>Free</span>
+                                                    <span><Link to="#">Aladdin</Link></span>
+                                                </li>
+                                                <li>
+                                                    
+                                                    <span><Link to="#">Gemini Man</Link></span>
+                                                </li>
+                                                <li>
+                                                    <span className='free'>Free</span>
+                                                    <span><Link to="#">One Strange Rock</Link></span>
+                                                </li>
+                                                <li>
+                                                    
+                                                    <span><Link to="#">Quincy</Link></span>
+                                                </li>
+                                                <li>
+                                                    
+                                                    <span><Link to="#">Bright</Link></span>
+                                                </li>
+                                                <li>
+                                                    
+                                                    <span><Link to="#">The American Can</Link></span>
+                                                </li>
+                                                <li>
+                                                    <span className='free'>Free</span>
+                                                    <span><Link to="#">Collateral Beauty</Link></span>
+                                                </li>
+                                            </ul>
+                                        </div>  
+                                    </div>
+                                    <div className="v-cast-thumb">
+                                        <div className="v-cast-thumb-title">
+                                            <img src={actor2} alt='' />
+                                            <div className="x"><Link to="#">Martin Lawrence</Link><span> as Detective Marcus Burnett</span></div>
+                                        </div>
+                                        <div className="v-cast-thumb-list">
+                                            <ul>
+                                                <li>
+                                                    <span><Link to="#">Bad Boys for Life</Link></span>
+                                                </li>
+                                                <li>
+                                                    <span><Link to="#">The Beach Bum</Link></span>
+                                                </li>
+                                                <li>
+                                                    <span><Link to="#">Def Comedy Jam 25</Link></span>
+                                                </li>
+                                                <li>
+                                                    <span><Link to="#">Martin Lawrence Doin’ Time</Link></span>
+                                                </li>
+                                                <li>
+                                                    <span><Link to="#">Big Mommas: Like Father, Like Son</Link></span>
+                                                </li>
+                                                <li>
+                                                    <span className='free'>Free</span>
+                                                    <span><Link to="#">Death at a Funeral</Link></span>
+                                                </li>
+                                                <li>
+                                                    <span className='free'>Free</span>
+                                                    <span><Link to="#">Welcome Home Roscoe Jenkins</Link></span>
+                                                </li>
+                                                <li>
+                                                    <span className='free'>Free</span>
+                                                    <span><Link to="#">College Road Trip</Link></span>
+                                                </li>
+                                                <li>
+                                                    <span className='free'>Free</span>
+                                                    <span><Link to="#">Wild Hogs</Link></span>
+                                                </li>
+                                                <li>
+                                                    <span className='free'>Free</span>
+                                                    <span><Link to="#">Martin Lawrence Presents 1st Amendment Stand-Up</Link></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="v-cast-thumb">
+                                        <div className="v-cast-thumb-title">
+                                            <img src={actor3} alt='' />
+                                            <div className="x"><Link to="#">Paola Nu&#xF1;ez</Link><span> as Rita</span></div>
+                                        </div>
+                                        <div className="v-cast-thumb-list">
+                                            <ul>
+                                                <li>
+                                                    <span><Link to="#">Bad Boys for Life</Link></span>
+                                                </li>
+                                                <li>
+                                                    <span className='free'>Free</span>
+                                                    <span><Link to="#">The Purge</Link></span>
+                                                </li>
+                                                <li>
+                                                    <span><Link to="#">Queen of Hearts</Link></span>
+                                                </li>
+                                                <li>
+                                                    <span><Link to="#">Behind the Power</Link></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div className="v-detail-box-show">
+                            <h2>Similar Movies to Bad Boys for Life</h2> 
+                            <div className="recommend">
+                                <div className="recommend-box clearfix">
+                                    <MovieRecommend />
+                                    <MovieRecommend />
+                                    <MovieRecommend />
+                                    <MovieRecommend />
+                                    <MovieRecommend />
+                                    <MovieRecommend />
+                                    <MovieRecommend />
+                                    <MovieRecommend />
+                                    <MovieRecommend />
+                                    <MovieRecommend />
+                                    <MovieRecommend />
+                                    <MovieRecommend />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="v-detail-box-show">
+                            <h2> You May Also Like </h2>
+                            <div className="recommend">
+                                <div className="recommend-box clearfix">
+                                    <MovieRecommend2 />
+                                    <MovieRecommend2 />
+                                    <MovieRecommend2 />
+                                    <MovieRecommend2 />
+                                    <MovieRecommend2 />
+                                    <MovieRecommend2 />
+                                    <MovieRecommend2 />
+                                    <MovieRecommend2 />
+                                    <MovieRecommend2 />
+                                    <MovieRecommend2 />
+                                    <MovieRecommend2 />
+                                    <MovieRecommend2 />
+                                </div>
+                            </div>
+                        </div>
                     </Col>
                 </Row>   
-            </div>
-        
+            </div> 
         );
     }
 }

@@ -3,6 +3,8 @@ import { Layout, Menu, Row, Col } from 'antd';
 import {MenuOutlined, MenuFoldOutlined} from '@ant-design/icons';
 import logo from './img/logo.png';
 import Detail from './view/detailPage/index';
+import Subscribe from './subscribe';
+import Footer from './footer';
 
 
 const { Header, Sider } = Layout;
@@ -63,6 +65,16 @@ class App extends Component {
           <Row style={{ backgroundColor:'#0f0f0f'}}>
             <Col span={18} push={3} >
                <Detail />
+            </Col>
+          </Row>
+          <Row style={{ backgroundColor:'#1B1B1B'}}>
+            <Col span={18} push={3} >
+               <Subscribe />
+            </Col>
+          </Row>
+          <Row style={{ backgroundColor:'#e7e7e7'}}>
+            <Col span={18} push={3} >
+               <Footer />
             </Col>
           </Row>
         </Layout>
